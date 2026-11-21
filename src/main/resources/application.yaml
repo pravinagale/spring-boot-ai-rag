@@ -1,6 +1,14 @@
 spring:
   application:
     name: spring-boot-ai-rag
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring-ai-rag
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
 
   #ai:
   #  openai:
@@ -28,5 +36,5 @@ spring:
         initialize-schema: true
         host: localhost
         port: 6334
-        collection-name: demo-collection
+        collection-name: collection
 

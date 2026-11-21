@@ -1,4 +1,4 @@
-package org.springbootairag.rag;
+package org.springbootairag.ragdataload;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.ai.document.Document;
@@ -23,7 +23,7 @@ public class RAGPdfDataLoader {
         this.vectorStore = vectorStore;
     }
 
-    @PostConstruct
+    //@PostConstruct
     public void loadDataPdf(){
         TikaDocumentReader tikaDocumentReader = new TikaDocumentReader(pdfResource);
         List<Document> documents = tikaDocumentReader.get();
