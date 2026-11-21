@@ -35,7 +35,7 @@ public class RAGDataLoader {
         );
     }
 
-    @PostConstruct
+    //@PostConstruct
     public void loadSampleData(){
         List<String> sampleData = getSampleData();
         List<Document> documents = sampleData.stream()
