@@ -8,13 +8,14 @@ spring:
   #    chat:
   #      options:
   #        model: gpt-5.2
-  ai:
+  #ai:
     #google:
     #  genai:
     #    api-key:
     #    chat:
     #      model: gemini-1.5-flash
 
+  ai:
     ollama:
       base-url: http://localhost:11434/
       chat:
