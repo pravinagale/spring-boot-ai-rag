@@ -1,3 +1,31 @@
 spring:
   application:
     name: spring-boot-ai-rag
+
+  #ai:
+  #  openai:
+  #    api-key: ${OPENAI_API_KEY}
+  #    chat:
+  #      options:
+  #        model: gpt-5.2
+  ai:
+    #google:
+    #  genai:
+    #    api-key:
+    #    chat:
+    #      model: gemini-1.5-flash
+
+    ollama:
+      base-url: http://localhost:11434/
+      chat:
+        model: llama3.2:1b
+      embedding:
+        model: mxbai-embed-large
+
+    vectorstore:
+      qdrant:
+        initialize-schema: true
+        host: localhost
+        port: 6334
+        collection-name: demo-collection
+
